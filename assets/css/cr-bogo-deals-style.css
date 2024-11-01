@@ -1,0 +1,81 @@
+
+
+.woo_cr_label{
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+footer {
+    position: relative;
+    margin-top: -150px;  /* negative value of footer height */
+    height: 150px;
+    clear: both;
+}
+
+input[type=number]{
+    width: 150px;
+}
+
+.cr_button{
+
+    height:30px; width:30px
+}
+
+/* The switch - the box around the slider */
+.cr-bogo-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.cr-bogo-switch input {display:none;}
+
+/* The slider */
+.cr-bogo-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.cr-bogo-slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .cr-bogo-slider {
+    background-color: #5cb85c;
+}
+
+input:focus + .cr-bogo-slider {
+    box-shadow: 0 0 1px #5cb85c;
+}
+
+input:checked + .cr-bogo-slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.cr-bogo-slider.round {
+    border-radius: 34px;
+}
+
+.cr-bogo-slider.round:before {
+    border-radius: 50%;
+}
